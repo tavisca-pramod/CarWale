@@ -16,7 +16,7 @@ App.Router.map(function() {
 //index
 App.IndexRoute = Ember.Route.extend({
 	model : function(){
-		return { content : 'index'};
+		return { content : 'Car wale'};
 	}
 });
 
@@ -32,7 +32,7 @@ App.IndexController = Ember.ObjectController.extend({
 
 App.RentRoute = Ember.Route.extend({
 	model : function(){
-		return { content : 'Rent'};
+		return { content : 'Rent a car'};
 	}
 });
 
@@ -48,7 +48,7 @@ App.RentController = Ember.ObjectController.extend({
 
 App.SellRoute = Ember.Route.extend({
 	model : function(){
-		return { content : 'Sell'};
+		return { content : 'Sell a car'};
 	}
 });
 
@@ -64,7 +64,7 @@ App.SellController = Ember.ObjectController.extend({
 
 App.BuyRoute = Ember.Route.extend({
 	model : function(){
-		return { content : 'Buy'};
+		return { content : 'Buy new/old cars'};
 	}
 });
 
@@ -80,7 +80,7 @@ App.BuyController = Ember.ObjectController.extend({
 
 App.CheckpriceRoute = Ember.Route.extend({
 	model : function(){
-		return { content : 'Checkprice'};
+		return { content : 'Check market price'};
 	}
 });
 
