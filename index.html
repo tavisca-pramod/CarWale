@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />	
+</head>
+<header> Car Wale</header>
+<body>
+	
+<script type="text/x-handlebars" id="index">
+	<nav>
+  		{{#link-to 'rent'}}Rent{{/link-to}}
+  		{{#link-to 'sell'}}Sell{{/link-to}}
+  		{{#link-to 'buy'}}Buy{{/link-to}}
+  		{{#link-to 'checkprice'}}Check Market Price{{/link-to}}
+	</nav>	
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>
+		{{outlet}}
+	</script>
+
+	<script type="text/x-handlebars" id="rent">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>
+		 {{view "tarifs"}}
+		 {{view "book"}}
+	</script>
+
+	<script type="text/x-handlebars" id="sell">
+		<section id="app">
+			<label>{{model.content}}</label>
+		</section>		
+	</script>
+	
+
+	<script type="text/x-handlebars" id="buy">
+		<section id="app">
+			<label>{{model.content}}</label>
+		</section>
+		 {{view "new"}}
+		 {{view "used"}}
+	</script>
+	
+
+	<script type="text/x-handlebars" id="checkprice">
+		<section id="app">
+			<label>{{model.content}}</label>
+		</section>		
+	</script>	
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="js/handlebars.js"></script>
+  	<script src="js/ember.js"></script>
+  	<script src="js/app.js"></script>
+</body>
+
+</html>
