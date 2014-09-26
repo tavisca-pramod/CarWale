@@ -7,6 +7,10 @@ App.Router.map(function() {
   this.route("sell", { path: "/sell" });
   this.route("buy", { path: "/buy" });
   this.route("checkprice", { path: "/checkprice" });
+  this.route("book", { path: "/rent/book" });
+  this.route("tarifs", { path: "rent/tarifs" });
+  this.route("new", { path: "/buy/new" });
+  this.route("used", { path: "/buy/checkprice" });
 });
 
 //index
@@ -85,5 +89,69 @@ App.CheckpriceView = Ember.View.extend({
 });
 
 App.CheckpriceController = Ember.ObjectController.extend({
+	actions: {}
+});
+
+//book a car
+
+App.BookRoute = Ember.Route.extend({
+	model : function(){
+		return { content : 'Book car'};
+	}
+});
+
+App.BookView = Ember.View.extend({
+	didInsertElement : function(){}
+});
+
+App.BookController = Ember.ObjectController.extend({
+	actions: {}
+});
+
+//tarifs
+
+App.TarifsRoute = Ember.Route.extend({
+	model : function(){
+		return { content : 'Tarif plans'};
+	}
+});
+
+App.TarifsView = Ember.View.extend({
+	didInsertElement : function(){}
+});
+
+App.TarifsController = Ember.ObjectController.extend({
+	actions: {}
+});
+
+//new car
+
+App.NewRoute = Ember.Route.extend({
+	model : function(){
+		return { content : 'Buy new car'};
+	}
+});
+
+App.NewView = Ember.View.extend({
+	didInsertElement : function(){}
+});
+
+App.NewController = Ember.ObjectController.extend({
+	actions: {}
+});
+
+//Used car
+
+App.UsedRoute = Ember.Route.extend({
+	model : function(){
+		return { content : 'Buy Used cars'};
+	}
+});
+
+App.UsedView = Ember.View.extend({
+	didInsertElement : function(){}
+});
+
+App.UsedController = Ember.ObjectController.extend({
 	actions: {}
 });

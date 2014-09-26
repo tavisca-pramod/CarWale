@@ -6,7 +6,7 @@
 </head>
 <header> Car Wale</header>
 <body>
-	
+
 <script type="text/x-handlebars" id="index">
 	<nav>
   		{{#link-to 'rent'}}Rent{{/link-to}}
@@ -24,6 +24,8 @@
 		<section id="app">
 		<label>{{model.content}}</label>
 		</section>
+		{{#link-to 'tarifs'}}Tarifs{{/link-to}}
+  		{{#link-to 'book'}}Book car{{/link-to}}
 		 {{view "tarifs"}}
 		 {{view "book"}}
 	</script>
@@ -39,6 +41,8 @@
 		<section id="app">
 			<label>{{model.content}}</label>
 		</section>
+		{{#link-to 'new'}}New{{/link-to}}
+  		{{#link-to 'used'}}Used car{{/link-to}}
 		 {{view "new"}}
 		 {{view "used"}}
 	</script>
@@ -49,6 +53,30 @@
 			<label>{{model.content}}</label>
 		</section>		
 	</script>	
+
+	<script type="text/x-handlebars" id="book">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>		
+	</script>
+
+	<script type="text/x-handlebars" id="tarifs">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>		
+	</script>
+	
+	<script type="text/x-handlebars" id="new">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>		
+	</script>
+	
+	<script type="text/x-handlebars" id="used">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>		
+	</script>
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
