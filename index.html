@@ -5,7 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />	
 </head>
 <body>
-
+<script type="text/x-handlebars" id="rent">
+		<section id="app">
+		<label>{{model.content}}</label>
+		</section>
+		{{#link-to 'tarifs'}}Tarifs{{/link-to}}
+  		{{#link-to 'book'}}Book car{{/link-to}}
+		 {{view "tarifs"}}
+		 {{view "book"}}
+	</script>
+	
 <script type="text/x-handlebars" id="index">
 	<nav>
   		{{#link-to 'rent'}}Rent{{/link-to}}
@@ -19,15 +28,7 @@
 		{{outlet}}
 	</script>
 
-	<script type="text/x-handlebars" id="rent">
-		<section id="app">
-		<label>{{model.content}}</label>
-		</section>
-		{{#link-to 'tarifs'}}Tarifs{{/link-to}}
-  		{{#link-to 'book'}}Book car{{/link-to}}
-		 {{view "tarifs"}}
-		 {{view "book"}}
-	</script>
+	
 
 	<script type="text/x-handlebars" id="sell">
 		<section id="app">
